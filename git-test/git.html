@@ -1,18 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #head {
+            height: 90px;
+            background-color: rgb(177, 245, 245);
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        #head img {
+            width: 100px;
+        }
+
+        #search-box {
+            border: none;
+            border-bottom: 1px solid rgb(233, 104, 104);
+            outline: none;
+            height: 30px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        #head_link {
+            background-color: rgb(145, 191, 236);
+            font-size: 20px;
+            padding: 10px 30px;
+        }
+
+        #toplimk {
+            text-align: center;
+        }
+
+        #conten {
+            width: 67%;
+            float: left;
+            padding: 20px;
+        }
+
+        .formatted-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .formatted-list li {
+            margin-right: 20px;
+        }
+
+        #left {
+            width: 28%;
+            float: left;
+            padding: 20px;
+        }
+
+        #footer {
+            clear: both;
+            background-color: rgb(192, 29, 64);
+            height: 40px;
+        }
+
+        iframe {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
 <body>
+    <div id="head">
+        <img src="logophim.png" alt="logo">
+        <input id="search-box" type="text" placeholder="Tìm Kiếm">
+    </div>
+    <div id="head_link">
+        <div id="toplimk">
+            <a href="#" title="home">Home</a> | 
+            <a href="#" title="phim hoat hinh">Phim Hoạt Hình</a> | 
+            <a href="#" title="phim hoat hinh yeu thich">Phim Hoạt Hình Yêu Thích</a> | 
+            <a href="#" title="nhan vat hoat hinh" >Nhân Vật Hoạt Hình</a> | 
+            <a href="" title="goi y">Gợi ý</a>
+        </div>
+    </div>
+    <div id="conten">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/JSFhIMhLlH8?si=w8d0Tn2MmuRbKbbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <ul class="formatted-list">
+            <li><h2>[S12] Doraemon - Tập 574 - Taxi Khăn Gói - Bản Lồng Tiếng Hay Nhất</h2></li>
+            <li><img src="icon1.png" alt="icon"></li>
+        </ul>
+        <i>565,452,142 Lượt xem</i>
+        <h2>Doraemon Vlog</h2>
+        <pre>       
+            "Doraemon" là một bộ truyện tranh và anime nổi tiếng của Nhật Bản, được sáng tác bởi Fujiko F. Fujio. 
+            Bộ truyện kể về cuộc sống của một cậu bé tên là Nobita, người sống trong thế kỷ 22. 
+            Nobita là một cậu bé vụng về, luôn gặp phải nhiều rắc rối và khó khăn trong cuộc sống hàng ngày của mình.
 
-<h2>What Can JavaScript Do?</h2>
-
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
+            Một ngày nọ, xuất hiện một chú mèo máy tên là Doraemon từ tương lai để giúp đỡ Nobita. 
+            Doraemon được gửi từ tương lai bởi ông cậu Nobita trong thế kỷ 22 để giúp đỡ Nobita tránh khỏi những rắc rối và gặp phải trong cuộc sống hàng ngày. 
+            Doraemon mang theo một cái túi đầy công cụ và thiết bị từ tương lai, từ những chiếc bóng đèn có khả năng biến người ta thành ai đó khác đến những cái cánh có thể bay.
+        </pre>
+    </div>
+    <div id="left">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_LdLR71fyQ?si=G0I1bPHBYJEVviJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N4QdGNHcp5s?si=S4WpNEhqPUL2j2Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jbWmOLpGUnE?si=gTVJjZmTvXYC0tOW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="footer"></div>
 </body>
 </html>
