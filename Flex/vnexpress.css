@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hearder*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.header-item {
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.header-left {
+    background-color: rgb(0, 255, 255);
+    flex-basis: 50%;
+}
+
+.header-right {
+    background-color: blueviolet;
+    flex-basis: 50%;
+}
+
+nav {
+    background-color: blanchedalmond;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+}
+/* main */
+main {
+    margin: 0 10%;
+    background-color: rgb(16, 236, 101);
+}
+
+.info-important {
+    display: flex;
+}
+
+.info-impor-text {
+    flex-basis: 60%;
+    background-color: rgb(6, 58, 58);
+}
+
+.info-impor-ads {
+    flex-basis: 40%;
+    background-color: darkolivegreen;
+}
