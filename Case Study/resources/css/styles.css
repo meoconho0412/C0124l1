@@ -1,3 +1,5 @@
+/*--------------------------SETUP--------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +14,85 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/*-------------------------COMPOONENT---------------------------------*/
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.btn:hover, .btn:active {
+    background-color: rgb(142, 216, 46);
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+h1,h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: rgb(142, 216, 46);
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #af8d6e;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.p-long {
+    text-align: center;
+    color: #265077;
+    font-size:22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+
+section{
+    padding: 50px;
+}
 /*----------------------------------------------------------*/
+
 /*-----------------------HEADER-----------------------------*/
 header {
-    background-image: linear-gradient(45deg,rgba(2,33,64, 0.8),55%,rgba(45,95,93, 0.85)) ,url("../img/background4.jpeg");
+    background-image: linear-gradient(45deg,rgba(2,33,64, 0.8),55%,rgba(45,95,93, 0.85)) ,url("../img/Real\ Madrid\ CF.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -23,10 +100,10 @@ header {
 }
 
 .logo {
-    width: 350px;
+    width: 300px;
     float: left;
-    margin-left: 70px;
-    margin-top: -50px;
+    margin-left: 60px;
+    margin-top: -10px;
 }
 
 .main-nav {
@@ -52,16 +129,6 @@ header {
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #cccccc;
 }
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
-
-.row {
-    width: 1140px;
-    margin: 0 auto;
-}
 
 .heading-main-box {
     position: absolute;
@@ -71,23 +138,37 @@ header {
     width: 1140px;
 }
 
-h1 {
-    text-transform: uppercase;
-    font-size: 300%;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-    color: white;
-    line-height: 135%;
-    margin-bottom: 50px;
+/*-----------------------ABOUT-----------------------------*/
+.about-picture{
+    position: relative;
+    margin-top: 50px;
 }
-.btn {
-    text-decoration: none;
-    color: white;
-    background-color: #e67e22;
-    padding: 15px 30px;
+.about-picture img {
+    width: 90%;
     border-radius: 20px;
-    margin: 0 5px;
-    width: 190px;
-    display: inline-block;
+    border: 4px solid #b7d6f3;
+    box-shadow: 0px 5px 15px 5px  #67acee;
+    transition: all .7s;
+    
+}
+
+.picture-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #c2e1fd;
+    transform: translate(-60%,100%);
+    opacity: 0;
+    transition: all .7s;
+}
+
+.about-picture:hover img, 
+.about-picture:active img {
+    filter:brightness(80%) blur(2px);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title {
+    transform: translate(-60%,-50%);
+    opacity: 1;
 }
