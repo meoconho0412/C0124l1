@@ -14,6 +14,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*-------------------------COMPOONENT---------------------------------*/
 .btn {
     text-decoration: none;
@@ -43,7 +47,7 @@ html {
     margin: 0 auto;
 }
 
-h1,h2 {
+h1,h2,h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -62,6 +66,17 @@ h2 {
     font-size: 180%;
     font-weight: 700;
     text-align: center;
+}
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
 }
 
 h2::after {
@@ -87,6 +102,12 @@ h2::after {
 
 section{
     padding: 50px;
+}
+
+.small-icon {
+    color: #3b5a77;
+    font-size: 130%;
+    margin-right: 10px;
 }
 /*----------------------------------------------------------*/
 
@@ -171,4 +192,214 @@ header {
 .about-picture:active .picture-title {
     transform: translate(-60%,-50%);
     opacity: 1;
+}
+
+/*---------------Product-section---------------------*/
+.product-section {
+    background-color: #f4f4f4;
+}
+.product-section h2 {
+    margin-bottom: 60px;
+}
+
+.product-box {
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 400px;
+}
+
+.product-price {
+    color: #265077;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+}
+.product-price span {
+    font-size: 80%;
+}
+
+.product-box ul li {
+    margin-left: 20%;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-box .btn {
+    margin-left: 20%;
+}
+
+/*---------------Testimonials-Section---------------------*/
+.testimonials-section {
+    background-image:linear-gradient(45deg,rgba(2,33,64, 0.8),55%,rgba(45,95,93, 0.85)), url('../img/background2.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonials-section h2 {
+    margin-top: 70px;
+}
+
+blockquote{
+    width: 95%;
+    position: relative;
+    font-size: italic;
+    line-height: 140%;
+    color: white;
+    margin-top: 50px;
+}
+blockquote::before{
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;;
+    left: -10px;
+}
+cite{
+    display: block;
+    color: #6b95bd;
+    margin-top: 25px;
+
+}
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/*-----------------------sponsors-section-----------------------*/
+
+.sponsors-section {
+    background-color: #f4f4f4;
+}
+
+.sponsors-section h2{
+    margin-bottom: 50px;
+}
+.sponsors-showcase {
+    margin-left: 8%;
+}
+
+.sponsors-showcase li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo-sponsors {
+    width: 140px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.sponsors-showcase li .logo-sponsors:hover,
+.sponsors-showcase li .logo-sponsors:active {
+    transform: scale(1.2);
+}
+
+figcaption{
+    color: #265077;
+    font-size: 120%;
+    font-weight: 900;
+}
+/*-----------------------Contact Form-----------------------*/
+.contact-section {
+    background-image:linear-gradient(45deg,rgba(2,33,64, 0.8),55%,rgba(45,95,93, 0.85)), url('../img/background5.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inspiration{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    word-spacing: 1px;
+    font-size: 95%;
+}
+
+.inspiration .small-icon {
+    color: #67acee;
+}
+
+.inspiration .small-icon:hover,
+.inspiration .small-icon:active {
+    transform: scale(1.3);
+}
+.social-icons{
+   margin-top: 50px;
+   list-style: none; 
+}
+.social-icons li {
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 20px;
+    color: white;
+    
+}
+.social-icons li i {
+    transition: all .3s;
+    cursor: pointer;
+}
+.social-icons li i:hover,
+.social-icons li i:active {
+    transform: scale(1.3);
+    color: #0765f1;
+}
+
+form{
+    background-color: rgba(0, 0, 0, .4);
+    margin-left: 40%;
+    width: 60%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+label{
+    font-size: 150%;
+    color: wheat;
+}
+input,textarea {
+    outline: none;
+    padding: 10px;
+    background-color: rgba(110, 109, 109, 0.3);
+    border: 1px solid rgba(29, 28, 28, 0.8);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+input{
+    height: 50px;
+
+}
+
+input[type=text],input[type=email], textarea{
+    width: 25%;
+    transition: all .3s;
+}
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus{
+    color: white;
+    background-color: rgba(48, 47, 47, 0.8);
+}
+input .btn{
+    text-align: center;
+}
+
+/*-----------------------Footer-----------------------*/
+footer {
+    text-align: center;
+    background-color: #3b3b3b;
+    color: white;
+    padding: 20px;
 }
